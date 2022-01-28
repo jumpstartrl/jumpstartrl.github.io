@@ -54,6 +54,13 @@
         <div class="row">
             <h2 class="col-md-12 text-center">
                 <b>Jump-Start Reinforcement Learning</b>
+                <small><!-- 
+                    Preprint
+                </small> -->
+            </h2>
+        </div>
+        <div class="row">
+            <h2 class="col-md-12 text-center">
                 <small>
                     Preprint
                 </small>
@@ -114,6 +121,12 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
+Reinforcement learning (RL) provides a theoretical framework for continuously improving an agent's behavior via trial and error. However, efficiently learning policies from scratch can be very difficult, particularly for tasks that present exploration challenges. In such settings, it might be desirable to initialize RL with an existing policy, offline data, or demonstrations. However, naively performing such initialization in RL often works poorly, especially for value-based methods.
+In this paper, we present a meta algorithm that can use offline data, demonstrations, or a pre-existing policy to initialize an RL policy, and is compatible with any RL approach.
+In particular, we propose Jump-Start Reinforcement Learning (JSRL), an algorithm that employs two policies to solve tasks: a guide-policy, and an exploration-policy.
+By using the guide-policy to form a curriculum of starting states for the exploration-policy, we are able to efficiently improve performance on a set of simulated robotic tasks.
+We show via experiments that it is able to significantly outperform existing imitation and reinforcement learning algorithms, particularly in the small-data regime.
+In addition, we provide an upper bound on the sample complexity of \method and show that with the help of a guide-policy, one can improve the sample complexity for non-optimism exploration methods from exponential in horizon to polynomial.
                 </p>
             </div>
         </div>
@@ -140,7 +153,13 @@
                 <h3>
                     Approach
                 </h3>
+                <p style="test-align:center;">
+            <image src="img/main_figure_v2.png"  class="image-responsive" width="100%">
+                </p>
                 <p class="text-justify">
+The main idea behind our method is to leverage two policies, a guide-policy and an exploration-policy, executed sequentially to learn tasks more efficiently.
+During the initial phases of training, the guide-policy is significantly better than the untrained exploration-policy, so we would like to collect data using the guide-policy. However, this data is out of distribution for the exploration-policy, since exploring with the exploration-policy will visit different states. Therefore, we would like to gradually transition data collection away from the guide-policy and toward the exploration-policy. Intuitively, we would like to use the guide-policy to get the agent into "good" states, and then let the exploration-policy take over and explore from those states. As it gets better and better, the exploration-policy should take over earlier and earlier, until all data is being collected by the exploration-policy and there is no more distributional shift. We can employ different switching strategies to switch from the guide-policy to the exploration-policy, but the most direct curriculum simply switches from the guide-policy to the exploration-policy at some time step h, where h is initialized to the full task horizon and gradually decreases over the course of training. This naturally provides a curriculum for the exploration-policy.               
+                </p>
         </div>
 
 
@@ -152,9 +171,15 @@
                 </h3>
 		<p class="text-justify">
 		</p>
-		<p style="test-align:center;">
-		    <!-- <image src="img/collage_v2.gif"  class="image-responsive" width="100%"> -->
-		</p>
+            <p style="test-align:center;">
+        <image src="img/d4rl_ablation.png"  class="image-responsive" width="100%">
+            </p>
+            <p style="test-align:center;">
+        <image src="img/indisc_grasping.png"  class="image-responsive" width="100%">
+            </p>
+            <p style="test-align:center;">
+        <image src="img/instance_grasping.png"  class="image-responsive" width="100%">
+            </p>
 	    </div>
         </div>
             
