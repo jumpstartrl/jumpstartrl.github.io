@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -13,30 +12,33 @@
 
     <!-- <base href="/"> -->
 
-        <!--FACEBOOK-->
+    <!--FACEBOOK-->
     <meta property="og:image" content="">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="682">
     <meta property="og:image:height" content="682">
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://jumpstartrl.github.com/"/>
-    <meta property="og:title" content="Jump-Start RL" />
-    <meta property="og:description" content="Project page for Jump-Start Reinforcement Learning" />
+    <meta property="og:title" content="Jump-Start RL"/>
+    <meta property="og:description" content="Project page for Jump-Start Reinforcement Learning"/>
 
-        <!--TWITTER-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jump-Start RL" />
-    <meta name="twitter:description" content="Project page for Jump-Start Reinforcement Learning" />
+    <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Jump-Start RL"/>
+    <meta name="twitter:description" content="Project page for Jump-Start Reinforcement Learning"/>
     <!-- <meta name="twitter:image" content="" /> -->
 
 
-<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     <link rel="stylesheet" href="css/app.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -45,169 +47,179 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-    
+
     <script src="js/app.js"></script>
 </head>
 
 <body>
-    <div class="container" id="main">
-        <div class="row">
-            <h2 class="col-md-12 text-center">
-                <b>Jump-Start Reinforcement Learning</b>
-                <small><!-- 
-                    Preprint
-                </small> -->
-            </h2>
-        </div>
-        <div class="row">
-            <h2 class="col-md-12 text-center">
-                <small>
-                    Preprint
-                </small>
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="list-inline">
-                    <li>
-			<!-- <a href=""> -->
-                          Anonymous Authors
-			<!-- </a> -->
-                    </li>
-                </ul>
-            </div>
-        </div>
+<div class="container" id="main">
+    <div class="row">
+        <h2 class="col-md-12 text-center">
+            <b>Jump-Start Reinforcement Learning</b>
+
+        </h2>
+    </div>
+
+</div>
+
+<div class="row">
+    <h2 class="col-md-12 text-center">
+        <small>
+            Anonymous Authors
+        </small>
+    </h2>
+</div>
 
 
-        <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <!-- li>
-                            <a href="">
-                            <image src="img/mip_paper_image.jpg" height="60px">
-                                <h4><strong>Paper</strong></h4>
-                            </a>
-                        </li -->
-                        <!-- li>
-                            <a href="">
-                            <image src="img/youtube_icon.png" height="60px">
-                                <h4><strong>Video</strong></h4>
-                            </a>
-                        </li -->
-                        <!-- li>
-                            <a href="">
-                            <image src="" height="60px">
-                                <h4><strong>Blogpost</strong></h4>
-                            </a>
-                        </li -->
-                        <!-- <li>
-                            <a href="https://github.com/">
-                            <image src="img/github.png" height="60px">
-                                <h4><strong>Code</strong></h4>
-                            </a>
-                        </li> -->
-                    </ul>
-                </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <p style="text-align:center;"><!-- 
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <p style="text-align:center;"><!--
         	    <image src="img/collage_v2.gif" class="img-responsive">
                 </p> -->
-                <h3>
-                    Abstract
-                </h3>
-                <p class="text-justify">
-Reinforcement learning (RL) provides a theoretical framework for continuously improving an agent's behavior via trial and error. However, efficiently learning policies from scratch can be very difficult, particularly for tasks that present exploration challenges. In such settings, it might be desirable to initialize RL with an existing policy, offline data, or demonstrations. However, naively performing such initialization in RL often works poorly, especially for value-based methods.
-In this paper, we present a meta algorithm that can use offline data, demonstrations, or a pre-existing policy to initialize an RL policy, and is compatible with any RL approach.
-In particular, we propose Jump-Start Reinforcement Learning (JSRL), an algorithm that employs two policies to solve tasks: a guide-policy, and an exploration-policy.
-By using the guide-policy to form a curriculum of starting states for the exploration-policy, we are able to efficiently improve performance on a set of simulated robotic tasks.
-We show via experiments that it is able to significantly outperform existing imitation and reinforcement learning algorithms, particularly in the small-data regime.
-In addition, we provide an upper bound on the sample complexity of \method and show that with the help of a guide-policy, one can improve the sample complexity for non-optimism exploration methods from exponential in horizon to polynomial.
-                </p>
-            </div>
-        </div>
-
-
-
-        <!--div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Video
-                </h3>
-                <div class="text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe width="560" height="315" src="" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div -->
-
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-            	<br>
-                <h3>
-                    Approach
-                </h3>
-                <p style="test-align:center;">
-            <image src="img/main_figure_v2.png"  class="image-responsive" width="100%">
-                </p>
-                <p class="text-justify">
-The main idea behind our method is to leverage two policies, a guide-policy and an exploration-policy, executed sequentially to learn tasks more efficiently.
-During the initial phases of training, the guide-policy is significantly better than the untrained exploration-policy, so we would like to collect data using the guide-policy. However, this data is out of distribution for the exploration-policy, since exploring with the exploration-policy will visit different states. Therefore, we would like to gradually transition data collection away from the guide-policy and toward the exploration-policy. Intuitively, we would like to use the guide-policy to get the agent into "good" states, and then let the exploration-policy take over and explore from those states. As it gets better and better, the exploration-policy should take over earlier and earlier, until all data is being collected by the exploration-policy and there is no more distributional shift. We can employ different switching strategies to switch from the guide-policy to the exploration-policy, but the most direct curriculum simply switches from the guide-policy to the exploration-policy at some time step h, where h is initialized to the full task horizon and gradually decreases over the course of training. This naturally provides a curriculum for the exploration-policy.               
-                </p>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-            	<br>
-                <h3>
-                    Results
-                </h3>
-		<p class="text-justify">
-		</p>
-            <p style="test-align:center;">
-        <image src="img/d4rl_ablation.png"  class="image-responsive" width="100%">
-            </p>
-            <p style="test-align:center;">
-        <image src="img/indisc_grasping.png"  class="image-responsive" width="100%">
-            </p>
-            <p style="test-align:center;">
-        <image src="img/instance_grasping.png"  class="image-responsive" width="100%">
-            </p>
-	    </div>
-        </div>
-            
-        
-            
-<!--         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Citation
-                </h3>
-                <div class="form-group col-md-10 col-md-offset-1">
-                    <textarea id="bibtex" class="form-control" readonly>
-}</textarea>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Acknowledgements
-                </h3>
-                <p class="text-justify">
-                    <br><br>
-                The website template was borrowed from <a href="http://jonbarron.info/">Jon Barron</a>.
-                </p>
-            </div>
-        </div> -->
+        <h3>
+            Abstract
+        </h3>
+        <p class="text-justify">
+            Reinforcement learning (RL) provides a theoretical framework for continuously improving an
+            agent's behavior via trial and error. However, efficiently learning policies from scratch
+            can be very difficult, particularly for tasks with exploration challenges. In such settings,
+            it might be desirable to initialize RL with an existing policy, offline data, or
+            demonstrations. However, naively performing such initialization in RL often works poorly,
+            especially for value-based methods.
+            In this paper, we present a meta algorithm that can use offline data, demonstrations, or a
+            pre-existing policy to initialize an RL policy, and is compatible with any RL approach.
+            In particular, we propose Jump-Start Reinforcement Learning (JSRL), an algorithm that
+            employs two policies to solve tasks: a guide-policy, and an exploration-policy.
+            By using the guide-policy to form a curriculum of starting states for the
+            exploration-policy, we are able to efficiently improve performance on a set of simulated
+            robotic tasks.
+            We show via experiments that JSRL is able to significantly outperform existing imitation and
+            reinforcement learning algorithms, particularly in the small-data regime.
+            In addition, we provide an upper bound on the sample complexity of JSRL and show that with
+            the help of a guide-policy, one can improve the sample complexity for non-optimism
+            exploration methods from exponential in horizon to polynomial.
+        </p>
     </div>
+</div>
+
+
+<!--div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h3>
+            Video
+        </h3>
+        <div class="text-center">
+            <div style="position:relative;padding-top:56.25%;">
+                <iframe width="560" height="315" src="" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+            </div>
+        </div>
+    </div>
+</div -->
+
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <br>
+        <h3>
+            Approach
+        </h3>
+        <p style="text-align:center;margin-top:2em;margin-bottom:2em">
+            <image src="img/jsrl_gif_v4.gif" class="image-responsive" width="75%"></image>
+        </p>
+        <p class="text-justify">
+            We’re introducing a meta-algorithm called Jump-Start Reinforcement Learning (JSRL) that can
+            use a pre-existing policy of any form to initialize any type of RL algorithm. JSRL uses two
+            policies to learn tasks: a guide-policy, and an exploration-policy. The exploration-policy
+            is an RL policy that is trained online with new experience, and the guide-policy is a fixed,
+            pre-existing policy of any form. In this work, we focus on scenarios where the guide-policy
+            is learned from demonstrations, but many other kinds of guide-policies can be used. It could
+            be a scripted policy, a policy trained with RL, or even a live human demonstrator. The only
+            requirements are that the guide-policy is reasonable (i.e., better than random exploration),
+            and it can select actions based on observations of the environment.
+        </p>
+
+
+        <p class="text-justify">
+            At the beginning of training, we roll out the guide-policy for a fixed number of steps so
+            that the agent is closer to goal states. The exploration-policy then takes over and
+            continues acting in the environment to reach these goals. As the performance of the
+            exploration-policy improves, we gradually reduce the number of steps that the guide-policy
+            takes, until the exploration-policy takes over completely. This process creates a curriculum
+            of starting states for the exploration-policy such that in each curriculum stage, it only
+            needs to learn to reach the initial states of prior curriculum stages.
+        </p>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <br>
+            <h3>
+                Results
+            </h3>
+            <p class="text-justify">
+                <b>Comparison to IL+RL Baselines</b>: Since JSRL can use a prior policy to initialize RL,
+                a natural comparison would be to
+                imitation and reinforcement learning (IL+RL) methods that train on offline datasets, then
+                fine-tune. We show how JSRL compares to competitive IL+RL methods on the D4RL benchmark
+                tasks, which vary in complexity and offline dataset quality. Out of the D4RL tasks, we
+                focus on the difficult ant maze and adroit dexterous manipulation environments.
+            </p>
+
+
+            <p class="text-justify">
+                For each experiment, we train on an offline dataset then run online fine-tuning. We
+                compare against algorithms designed specifically for this setting, which include AWAC,
+                IQL, CQL, and behavioral cloning (BC). While JSRL can be used in combination with any
+                initial guide-policy or fine-tuning algorithm, we use a pre-trained IQL policy as the
+                guide and also use IQL for fine-tuning. We find that JSRL performs well even with limited
+                access to demonstrations:
+            </p>
+
+            <p style="text-align:center;margin-top:2em;margin-bottom:2em">
+                <image src="img/d4rl_ablation.png" class="image-responsive" width="100%"></image>
+            </p>
+
+
+            <p class="text-justify">
+                <b>Vision-Based Robotic Tasks</b>: Utilizing offline data is especially challenging in
+                complex tasks such as vision-based robotic manipulation. The high dimensionality of both
+                the continuous-control action spaces as well as the pixel-based state space present unique
+                scaling challenges for IL+RL methods. To study how JSRL scales to such settings, we focus
+                on two challenging simulated robotic manipulation tasks: indiscriminate grasping and
+                instance grasping.
+
+            </p>
+
+
+            <p style="text-align:center;margin-top:2em;margin-bottom:2em">
+                <image src="img/manipulation_screenshot_v2.png" class="image-responsive"
+                       width="50%"></image>
+            </p>
+
+            <p class="text-justify">
+
+                We compare our algorithm against methods that are able to scale to complex vision-based
+                robotics settings such as Qt-Opt and AW-Opt. Each method has access to the same offline
+                dataset of successful demonstrations and is allowed to run online fine-tuning for
+                up to 100,000 steps.
+
+                In these experiments, we use BC as a guide-policy and combine JSRL with Qt-Opt for
+                fine-tuning. The combination of Qt-Opt+JSRL significantly outperforms the other methods in
+                both sample efficiency and final performance.
+
+            </p>
+            <p style="text-align:center;margin-top:2em;margin-bottom:2em">
+                <image src="img/ssorty_2k_v5.png" class="image-responsive" width="100%"></image>
+
+            </p>
+            <p style="text-align:center;margin-top:2em;margin-bottom:2em">
+                <image src="img/isorty_2k_v5.png" class="image-responsive" width="100%"></image>
+            </p>
+        </div>
+    </div>
+
+
+</div>
 </body>
 </html>
